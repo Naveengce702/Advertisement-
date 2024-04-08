@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUNGRY HUB</title>
+    <link rel="icon" href="img/icon.png.jpeg">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .background{
+            position: relative;
+            width: 900px;
+            height: 980px;
+            margin-left: 200px;
+            background-color: rgb(1, 1, 21);
+        }
+        .img{
+            position: absolute;
+            left: 320px;
+            padding-top: 1px;
+        }
+       .ani{
+        position: relative;
+        display: flex;
+        -webkit-box-reflect: below -20px linear-gradient(transparent,rgba(0,0,0,.2));
+        font-size: 20px;
+        font-family: BankGothic Md BT;
+        font-weight: bolder;
+        top:290px;
+        left: 80px;
+        color: white;
+        right: 390px;
+        line-height: 50px;
+       } 
+       .ani span{
+        position: relative;
+        display: inline-block;
+        animation-name: wave;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: calc(.1s * var(--i));
+       }
+       @keyframes wave{
+        0%,40%,100%{
+            transform: translateY(0);
+        }
+        20%{
+            transform: translateY(-20px);
+        }
+       }
+       .back{
+        position: relative;
+       }
+       .txt{
+        position: absolute;
+        top: 130px;
+        left: 360px;
+        text-shadow: 5px 5px 5px hsl(0,10%,70%);
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: Showcard Gothic;
+        color: white;
+       }
+       #rest{
+        position: absolute;
+        top: 180px;
+        left: 402px;
+        letter-spacing: 2px;
+        font-weight: bolder;
+        font-family: Comic Sans MS;
+        color: white;
+       }
+       .top{
+        position: absolute;
+        top: 40px;
+        left: 410px;
+       }
+       #since{
+        position: absolute;
+        top: 240px;
+        left: 403px;
+        font-weight: bolder;
+        color: white;
+        letter-spacing: 2px;
+        font-family: Bradley Hand ITC;
+       }
+       .biri img{
+        position: absolute;
+        top: 400px;
+        left: 70px;
+        width: 210px;
+        height: 210px;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 50%;
+       }
+       .bur img{
+        position: absolute;
+        top: 399px;
+        left: 360px;
+        width: 210px;
+        height: 210px;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 50%;
+       }
+       .chi img{
+        position: absolute;
+        top: 400px;
+        left: 650px;
+        width: 210px;
+        height: 210px;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 50%;
+       }
+       .up{
+        position: absolute;
+        color: white;
+        font-family: Tw Cen MT;
+        top: 730px;
+        left: 150px;
+        font-weight: lighter;
+       }
+       .num{
+        position: absolute;
+        color: white;
+        font-size: 36px;
+        font-weight: bolder;
+        font-family: Bradley Hand ITC;
+        top: 761px;
+        left: 170px;
+       }
+       .of{
+        
+        position: absolute;
+        color: white;
+        font-family: Tw Cen MT;
+        top: 808px;
+        left: 150px;
+        font-weight: lighter;
+       }
+       #free{
+        position: absolute;
+        top: 738px;
+        left: 456px;
+        word-spacing: 10px;
+        color: gold;
+        font-family: Papyrus;
+       }
+       .arr{
+        position: absolute;
+        top: 687px;
+        left: 720px;
+        transform: rotate(5deg);
+       }
+       .ar{
+        position: absolute;
+        top: 88px;
+        left: 50px;
+        transform: rotate(-30deg);
+       }
+       .cir{
+        position: absolute;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        top:80px;
+        left: 110px;
+        border-width: 6px;
+        border-color: yellow;
+        border-style: solid;
+       }
+       .line{
+        position: absolute;
+    
+        top: 860px;
+        left: 230px;
+       }
+       #add{
+        position: absolute;
+        top: 890px;
+        left: 330px;
+        color: white;
+        font-family: Bradley Hand ITC;
+        font-weight: bolder;
+       }
+       .web{
+        
+        position: absolute;
+        top: 950px;
+        left: 240px;
+        color: #ffffff;
+        font-family: Bodoni MT;
+        font-weight: bolder;
+       }
+       .web:hover{
+        color: rgb(59, 243, 243);
+       }
+       p{
+        position: absolute;
+        color: white;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-family: Bodoni MT;
+        top: 670px;
+        left: 140px;
+        font-weight: lighter;
+       }
+       .circl{
+        position: absolute;
+        border-radius: 50%;
+        width: 39px;
+        height: 39px;
+        top:40px;
+        left: 810px;
+        border-width: 3px;
+        background-color: gold;
+        border-color: yellow;
+        border-style: dotted;
+       }
+       .circle{
+        position: absolute;
+        border-radius: 50%;
+        width: 39px;
+        height: 39px;
+        top:65px;
+        left: 800px;
+        border-width: 3px;
+        border-color:white;
+        border-style: dashed;
+       }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="top"><img src="img/fast-food-icon-burger-icon-sHqynMTp-removebg-preview.png" alt="" width="90px" height="90px"></div>
+        <div class="txt">
+            <h2>HUNGRY  &nbsp;&nbsp;HUB</h2>
+        </div>
+        <h3 id="rest">Restaruant</h3>
+        <h3 id="since">Since &nbsp;&nbsp;1995</h3>
+        <div class="ani"><marquee behavior="" direction="left"><span style="--i:1">Y</span>
+                        <span style="--i:2">o</span>
+                        <span style="--i:3">u</span>
+                        <span style="--i:4">r</span>
+                        <span style="--i:5">&nbsp;</span>
+                        <span style="--i:6">&nbsp;</span>
+                        <span style="--i:7">S</span>
+                        <span style="--i:8">e</span>
+                        <span style="--i:9">a</span>
+                        <span style="--i:10">r</span>
+                        <span style="--i:11">c</span>
+                        <span style="--i:12">h</span>
+                        <span style="--i:13">&nbsp;</span>
+                        <span style="--i:14">&nbsp;</span>
+                        <span style="--i:15">E</span>
+                        <span style="--i:16">n</span>
+                        <span style="--i:17">d</span>
+                        <span style="--i:18">s</span>
+                        <span style="--i:19">&nbsp;</span>
+                        <span style="--i:20">&nbsp;</span>
+                        <span style="--i:21">H</span>
+                        <span style="--i:22">e</span>
+                        <span style="--i:23">r</span>
+                        <span style="--i:24">e</span>
+                        <span style="--i:25">.</span>
+                        <span style="--i:26">.</span>
+                    <span style="--i:26">.</span></marquee>
+                    </div>
+                    <div class="biri"><img src="img/8428841b550c333374888a7616b97a18.jpg" alt=""></div>
+                    <div class="bur"><img src="img/burger-with-french-fries-aerial.jpg" alt=""></div>
+                    <div class="chi"><img src="img/ab224ac07176201869788f3e7f0fa3ab.jpg" alt=""></div>
+                    <h2 class="up"> UP TO</h2>
+                    <h2 class="num">40&nbsp;%</h2>
+                    <h2 class="of">OFF</h2>
+                         <div class="cir"></div>
+                         <div class="circl"></div>
+                         <div class="circle"></div>
+                         <div class="ar">
+                               <img src="img/images__10_-removebg-preview.png" alt="" width="240px" height="150px">
+                         </div>
+                    <h1 id="free">Free Home Delivery</h1>
+                    <img src="img/images__10_-removebg-preview.png" alt="" class="arr" width="150px" height="150px">
+        
+                    <hr style="width: 450px; height: 1px;" class="line">
+                    <h3 id="add">123 &nbsp;Main Street,Thanjavur</h3>
+                    <h3 class="web">Contact : 9997700123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email : zxyrst123@gmail.com</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium unde nostrum rerum delectus nequed veritatis!
+                    </p>
+         </div>
+    </body>
+</html>
